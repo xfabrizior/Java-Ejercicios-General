@@ -7,13 +7,13 @@ public class Main {
 
         int num = 1;
 
-        do
+        while(num<=100)
         {
             System.out.println(num);
             num++;
 
         }
-        while(num<=100);
+
 
 
 
