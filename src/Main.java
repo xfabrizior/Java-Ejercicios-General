@@ -5,14 +5,9 @@ public class Main {
     public static void main(String[] args)
     {
 
-        int num1 = Integer.parseInt((JOptionPane.showInputDialog("Intruduce un número")));
+        double circulord = Double.parseDouble((JOptionPane.showInputDialog("Ingresa el radio de un circulo")));
 
-        int num2 = Integer.parseInt((JOptionPane.showInputDialog("Intruduce otro número")));
-
-        JOptionPane.showMessageDialog(null,"La suma de los 2 numero es: "+(num1+num2)+"\n"+
-                "La resta de los 2 numero es: "+(num1-num2)+"\n"+
-                "La multiplicación de los 2 numero es: "+(num1*num2)+"\n"+
-                "La división de los 2 numero es: "+(num1/num2));
+        JOptionPane.showMessageDialog(null,"El área de tu círculo es: "+(Math.PI*Math.pow(circulord,2)));
 
        /* System.out.println("La suma de los 2 numeros es: "+ (num1+num2));
         System.out.println("La resta de los 2 numeros es: "+ (num1-num2));
