@@ -1,17 +1,22 @@
-//import java.util.Scanner;
-import javax.swing.JOptionPane;
+import java.util.Scanner;
+//import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args)
     {
+        Scanner sc = new Scanner(System.in);
 
-        double circulord = Double.parseDouble((JOptionPane.showInputDialog("Ingresa el radio de un circulo")));
+        System.out.println("Ingresa un número");
+        double numero = sc.nextDouble();
 
-        JOptionPane.showMessageDialog(null,"El área de tu círculo es: "+(Math.PI*Math.pow(circulord,2)));
+        if(numero%2==0)
+        {
+            System.out.println("El numero ingresado es divisible entre 2");
+        }
+        else
+        {
+            System.out.println("El numero ingresado no es divisible entre 2");
+        }
 
-       /* System.out.println("La suma de los 2 numeros es: "+ (num1+num2));
-        System.out.println("La resta de los 2 numeros es: "+ (num1-num2));
-        System.out.println("La multiplicación de los 2 numeros es: "+ (num1*num2));
-        System.out.println("La división de los 2 numeros es: "+ (num1/num2));*/
     }
 }
