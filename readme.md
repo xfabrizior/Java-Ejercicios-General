@@ -1,9 +1,7 @@
-IDENTIFICAR EL CARÁCTER QUE GENERA UN CÓDIGO ASCII Y VISCEVERSA
+BUCLE BASICO DE 1 A 100
 
-* Se puede ingresar un código ASCII o un caracter mediante
-JOptionPane, y al seleccionar e ingresar, se muestra el
-caracter o código dependiendo de la opción.
 
-* Ejems:
-* Selecciona código, ingresa 92, el resultado es el carácter "/".
-* selecciona caracter, ingresa "/", el resultado es el codigo 92.
+Muestra un bucle de un numero que en cada loop se suma
+en 1, llegando hasta 100.
+
+Se usa do while.
