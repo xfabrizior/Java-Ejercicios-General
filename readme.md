@@ -1,5 +1,9 @@
-IDENTIFICAR SI UN NUMERO ED DIVISIBLE ENTRE 2
+IDENTIFICAR EL CARÁCTER QUE GENERA UN CÓDIGO ASCII Y VISCEVERSA
 
-* El programa pide que se ingrese un número por CONSOLA 
-del cual dependiendo si es divisible o no entre 2, se 
-muestra un mensaje correspondiente.
+* Se puede ingresar un código ASCII o un caracter mediante
+JOptionPane, y al seleccionar e ingresar, se muestra el
+caracter o código dependiendo de la opción.
+
+* Ejems:
+* Selecciona código, ingresa 92, el resultado es el carácter "/".
+* selecciona caracter, ingresa "/", el resultado es el codigo 92.

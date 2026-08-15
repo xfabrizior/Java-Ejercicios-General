@@ -1,22 +1,39 @@
-import java.util.Scanner;
-//import javax.swing.JOptionPane;
+///import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args)
     {
-        Scanner sc = new Scanner(System.in);
+        int opcion = Integer.parseInt(JOptionPane.showInputDialog("""
+                ¿Que desea identificar?:
+                1. Carácter
+                2. Código ASCII"""));
 
-        System.out.println("Ingresa un número");
-        double numero = sc.nextDouble();
+        char caracter;
+        int codigo;
 
-        if(numero%2==0)
-        {
-            System.out.println("El numero ingresado es divisible entre 2");
+        switch(opcion)
+    {
+            case 1:
+                caracter = (JOptionPane.showInputDialog("Ingresa un caracter")).charAt(0);
+                codigo= (int)caracter;
+                JOptionPane.showMessageDialog(null, "El código ASCII de tu caracter: "+caracter+"\n Es: "+codigo);
+                break;
+
+            case 2:
+                codigo = Integer.parseInt(JOptionPane.showInputDialog("Ingresa un código ASCII"));
+                caracter = (char)codigo;
+                JOptionPane.showMessageDialog(null, "El cáracter que genera el códico ASCII que ingresaste: "+codigo+"\n Es: "+caracter);
+                break;
+
+            default:
+                JOptionPane.showMessageDialog(null, "La opcion ingresada no es correcta");
+                break;
+
         }
-        else
-        {
-            System.out.println("El numero ingresado no es divisible entre 2");
-        }
+
+
+
 
     }
 }
